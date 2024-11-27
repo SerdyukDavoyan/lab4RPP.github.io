@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
-        uses: actions/checkout@v1
-      - name: Checkout code
         uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v3
       - name: Create folder & copy files
         run: |
           name=$(basename ${{ github.ref }})
